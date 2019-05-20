@@ -282,13 +282,13 @@ document.addEventListener('DOMContentLoaded', function (event) {
                     }
 
                     // make the trickplay preview show up
-                    // scrubber[0].dispatchEvent(new MouseEvent('mouseover', eventOptions));
+                     scrubber[0].dispatchEvent(new MouseEvent('mouseover', eventOptions));
 
-                    //   scrubber[0].dispatchEvent(new MouseEvent('mousemove', eventOptions));
-                    // }).then(delayUntil(function() {
-                    //   // wait for the trickplay preview to show up
-                    //   return jQuery('.trickplay').is(':visible');
-                    // }, 2500)).then(function() {
+                       scrubber[0].dispatchEvent(new MouseEvent('mousemove', eventOptions));
+                     }).then(delayUntil(function() {
+                       // wait for the trickplay preview to show up
+                       return jQuery('.trickplay').is(':visible');
+                     }, 2500)).then(function() {
 
                     // remember the old position
                     oldPlaybackPosition = getPlaybackPosition()
